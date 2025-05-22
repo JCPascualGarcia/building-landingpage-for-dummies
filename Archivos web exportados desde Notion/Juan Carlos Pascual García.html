@@ -1,0 +1,704 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Juan Carlos Pascual García</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1ead20d8-797f-808f-bc01-d555a1fab922" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 60.12%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/cactus_purple.svg"/></div><h1 class="page-title">Juan Carlos Pascual García</h1><p class="page-description"></p></header><div class="page-body"><div id="1ead20d8-797f-8166-b3e3-c0ca6811bebc" class="column-list"><div id="1ead20d8-797f-813d-882f-f0d61d9ce588" style="width:25%" class="column"><figure id="1ead20d8-797f-81c7-abef-cc14ee2ce1d8" class="image"><a href="Juan_Carlos_Pascual_(Foto)_WORK.jpg"><img style="width:336px" src="Juan_Carlos_Pascual_(Foto)_WORK.jpg"/></a></figure><h2 id="1ead20d8-797f-8182-83cd-fcb555b08188" class="block-color-default">Contacto</h2><hr id="1ead20d8-797f-8191-a55e-e122c206257f"/><p id="1ead20d8-797f-81c3-a55d-cc27541d83cc" class="">📞 <strong>+34 695 057 056</strong></p><p id="1ead20d8-797f-819b-9f36-d6717daf53bb" class="">✉️ jcpascualgarcia@gmail.com</p><p id="1ead20d8-797f-816f-b1c9-c812da8d6e2f" class="">📍 Madrid<strong>, España</strong></p><p id="1ead20d8-797f-8108-8c05-fe7657d2fb64" class="">🌐 <a href="https://juan-carlos-pascual-garcia.super.site/">https://juan-carlos-pascual-garcia.super.site/</a></p><p id="1ead20d8-797f-810c-b051-c7f3070d758f" class=""><mark class="highlight-blue"><strong>Github </strong></mark><a href="https://github.com/JCPascualGarcia">https://github.com/JCPascualGarcia</a></p><p id="1ead20d8-797f-81db-962b-fbae9a565594" class=""><mark class="highlight-blue"><strong>Linkedin </strong></mark><a href="https://www.linkedin.com/in/juancarlospascualgarcia/">https://www.linkedin.com/in/juancarlospascualgarcia/</a></p><p id="1ead20d8-797f-81fc-9397-cc3e1699d202" class=""><mark class="highlight-blue"><strong>Certificaciones (Credly) </strong></mark><a href="https://www.credly.com/users/juan-carlos-pascual-garcia">https://www.credly.com/users/juan-carlos-pascual-garcia</a></p><h2 id="1ead20d8-797f-812d-b3e5-ccc6ed989357" class="block-color-default">Intereses</h2><hr id="1ead20d8-797f-81c2-8249-fb171d5f637c"/><p id="1ead20d8-797f-813f-abf6-eac770701844" class=""><strong>🥾 </strong><mark class="highlight-teal"><strong>Senderismo</strong></mark></p><p id="1ead20d8-797f-817a-bdde-d032d404c1a8" class="block-color-default"><strong>Tocar úsica</strong></p><p id="1ead20d8-797f-81bf-90ee-e4c815b7e08e" class="">
+</p><h2 id="1ead20d8-797f-81d1-b95a-fca57d9cceab" class="block-color-default">Idiomas</h2><hr id="1ead20d8-797f-81b5-bbd7-e8a517cd996b"/><p id="1ead20d8-797f-8162-948e-f04dba6fef05" class="">🇬🇧 <strong>Inglés</strong></p><p id="1ead20d8-797f-81fe-98e3-d6bbbba30ddc" class="">🇪🇸 <strong>Español</strong></p><p id="1ead20d8-797f-815b-acf4-d92c32ffb693" class="">
+</p></div><div id="1ead20d8-797f-8135-8275-e3ba2a5f6233" style="width:75%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="1ead20d8-797f-8160-b69f-c6be2eb87513"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/cactus_purple.svg"/></div><div style="width:100%">Con más de 15 años en la industria del entretenimiento, 10 de ellos como Brand Manager, he supervisado productos y sistemas en el entorno de la iluminación profesional. Más recientemente me he especializado en ciberseguridad, respuesta a incidentes y Cloud, con la clara misión de proteger los activos digitales de las organizaciones, y enfocando mi compromiso con la seguridad desde una nueva aŕea.<p id="1ead20d8-797f-81bc-a979-fba59b2ea09b" class="">Competente en comunicación efectiva entre equipos internacionales, gracias a mis conocimientos de idiomas.</p></div></figure><h1 id="1ead20d8-797f-81b6-abfb-fb541b82d359" class="">Certificaciones</h1><hr id="1ead20d8-797f-812a-88b9-e0291bc08300"/><div id="1ead20d8-797f-810d-9999-c59d69da6ed9" class="column-list"><div id="1ead20d8-797f-81ad-98ea-c9f6cb37fb2c" style="width:12.5%" class="column"><figure id="1ead20d8-797f-8164-9165-cb96fb98ae52" class="image"><a href="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/twitter_thumb_201604_image.png"><img style="width:120px" src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/twitter_thumb_201604_image.png"/></a></figure></div><div id="1ead20d8-797f-8132-9a99-cd26f8e4f83d" style="width:87.5%" class="column"><p id="1ead20d8-797f-815a-995b-c55f71a33ce4" class=""><mark class="highlight-blue"><strong>AWS Certified Cloud Practitioner</strong></mark></p><p id="1ead20d8-797f-8157-8cbe-df164e988272" class=""><em><mark class="highlight-gray">Marzo 2025 </mark></em></p><p id="1ead20d8-797f-8106-9406-d2b8a0b02ce3" class="">Las personas que obtienen esta certificación tienen un conocimiento fundamental de los servicios de TI y sus usos en la nube de AWS. Han demostrado fluidez en la nube y conocimientos básicos de AWS. Los poseedores de la insignia son capaces de identificar los servicios de AWS esenciales necesarios para configurar proyectos centrados en AWS.</p></div></div><div id="1ead20d8-797f-819a-938b-ecbd62241d86" class="column-list"><div id="1ead20d8-797f-8185-a459-d28fb2469b0b" style="width:12.5%" class="column"><figure id="1ead20d8-797f-8197-9448-cf04c0028a2e" class="image" style="text-align:center"><a href="image.png"><img style="width:115.84375px" src="image.png"/></a></figure><p id="1ead20d8-797f-817b-814a-d13014a37a91" class="">
+</p><p id="1ead20d8-797f-81a5-b290-c580ca57ba03" class="">
+</p><figure id="1ead20d8-797f-8126-8974-cdc229838dbb" class="image" style="text-align:center"><a href="image%201.png"><img style="width:150.53125px" src="image%201.png"/></a></figure><p id="1ead20d8-797f-81c5-8bda-dfed78bc34a4" class="">
+</p><figure id="1ead20d8-797f-81dc-8e5b-cfa18991eb4c" class="image"><a href="image%202.png"><img style="width:1600px" src="image%202.png"/></a></figure></div><div id="1ead20d8-797f-81b2-897a-f8a69a6859ac" style="width:87.5%" class="column"><p id="1ead20d8-797f-81f7-8b2d-db652aa226bf" class=""><mark class="highlight-blue"><strong>AWS Knowledge: Architecting</strong></mark></p><p id="1ead20d8-797f-8107-a2b3-f4c156a976bf" class=""><em><mark class="highlight-gray">Abril 2025 </mark></em></p><p id="1ead20d8-797f-8142-86b1-c7934e678c0b" class="">Las personas que obtienen esta insignia han desarrollado habilidades técnicas y conocimientos de los conceptos y servicios de AWS con un enfoque en el diseño de soluciones en AWS utilizando las prácticas recomendadas.</p><p id="1ead20d8-797f-8132-9624-d7255e02153d" class="">
+</p><p id="1ead20d8-797f-81af-b7a6-c83dab884b08" class="">
+</p><p id="1ead20d8-797f-81d4-a9a1-e9f8145615a2" class=""><mark class="highlight-blue"><strong>AWS re/Start Graduate</strong></mark></p><p id="1ead20d8-797f-8133-b114-e9a767955f4a" class=""><em><mark class="highlight-gray">Marzo 2025 </mark></em></p><p id="1ead20d8-797f-818d-94f1-ef68f3904e77" class="">AWS re/Start es un programa de desarrollo de habilidades y capacitación laboral que prepara a los estudiantes para carreras en la nube. Cada cohorte, con el apoyo de mentores profesionales e instructores acreditados, completa una formación que incluye aprendizaje basado en situaciones reales, laboratorios prácticos y cursos.</p><p id="1ead20d8-797f-8120-ab95-c7dd46e40815" class="">
+</p><p id="1ead20d8-797f-8154-8dee-cd218822d108" class="">
+</p><p id="1ead20d8-797f-8144-96db-d377160a1c74" class=""><mark class="highlight-blue"><strong>Google Cybersecurity Professional Certificate V2</strong></mark></p><p id="1ead20d8-797f-816d-8df6-feded88a2b98" class=""><em><mark class="highlight-gray">October 2024</mark></em></p><p id="1ead20d8-797f-81b5-84d7-e2b217f10e56" class="">Google Cybersecurity Certificate consta de ocho cursos, desarrollados por Google, que incluyen evaluaciones prácticas y están diseñados para prepararles para puestos de nivel inicial en ciberseguridad. Tienen conocimientos básicos de Python, Linux, SQL, herramientas de gestión de eventos e información de seguridad (SIEM) y sistemas de detección de intrusiones (IDS). Saben identificar los riesgos, amenazas y vulnerabilidades más comunes en materia de ciberseguridad, así como las técnicas para mitigarlos.</p></div></div><h1 id="1ead20d8-797f-810e-a91f-c1a2324f8ea1" class="">Educación</h1><p id="1ead20d8-797f-8136-a685-c630f32bc34e" class="">
+</p><hr id="1ead20d8-797f-812a-858c-ee96a1673853"/><div id="1ead20d8-797f-81d2-9bda-cb00f5c6da0c" class="column-list"><div id="1ead20d8-797f-81c6-a44e-d4156e6b78f7" style="width:12.5%" class="column"><figure id="1ead20d8-797f-811a-b4e1-cfc2674749d7" class="image" style="text-align:center"><a href="image%203.png"><img style="width:115.65625px" src="image%203.png"/></a></figure><p id="1ead20d8-797f-81e7-85f0-cc3804e7139d" class="">
+</p><p id="1ead20d8-797f-81cb-ae6d-df1512664eb6" class="">
+</p><p id="1ead20d8-797f-81ae-abb0-c0ae34fbc337" class="">
+</p><figure id="1ead20d8-797f-81f6-8712-d0a875b19076" class="image"><a href="image%204.png"><img style="width:1246px" src="image%204.png"/></a></figure><p id="1ead20d8-797f-814b-8e0c-eae59ad40e75" class="">
+</p></div><div id="1ead20d8-797f-81e1-9a8f-fda5cc42b35a" style="width:87.5%" class="column"><p id="1ead20d8-797f-814a-a0e3-ee71765f79ea" class=""><strong>Licenciado en Technical Theatre / Stage Management (London City University)</strong></p><p id="1ead20d8-797f-8100-9ab8-d9f5414290a9" class=""><em><mark class="highlight-gray">Septiembre 1995 - Junio 1998</mark></em></p><p id="1ead20d8-797f-8101-9890-eb7766539570" class="">La <strong>licenciatura </strong><mark class="highlight-blue"><strong>BA (Hons) Technical Theatre and Stage Management</strong></mark> de la <strong><span style="border-bottom:0.05em solid">Guildhall School of Music and Drama</span></strong> (London City University) es un programa universitario intensivo y altamente especializado que forma a profesionales en los aspectos técnicos y organizativos de la producción teatral y de espectáculos en vivo. Este grado combina formación práctica con teoría, y está diseñado para preparar a los estudiantes para trabajar en <strong>teatro, ópera, danza, conciertos, eventos en vivo y medios audiovisuales</strong>. La enseñanza se realiza en un entorno profesional, con numerosas oportunidades de colaborar en producciones reales dentro de la escuela y con compañías externas.</p><p id="1ead20d8-797f-81c4-9d49-c44d56b6141a" class="">
+</p><p id="1ead20d8-797f-818a-a873-fd9bf40dbb75" class=""><strong>Licenciado en Publicidad y Relaciones Públicas (Universidad Complutense de Madrid)</strong></p><p id="1ead20d8-797f-81ef-84dd-f2de6525ad26" class=""><em><mark class="highlight-gray">Octubre 1988 - Junio 1993</mark></em><br/>El Grado en<br/><strong> </strong><mark class="highlight-blue"><strong>Publicidad y Relaciones Públicas</strong></mark> de la <strong><span style="border-bottom:0.05em solid">UCM</span></strong> es una titulación universitaria que forma profesionales capaces de diseñar, gestionar y evaluar estrategias de comunicación persuasiva en entornos comerciales, institucionales y sociales. Esta carrera combina una sólida base teórica con un enfoque práctico orientado al mundo profesional de la comunicación.<br/><br/><br/></p></div></div><h1 id="1ead20d8-797f-81d7-bc76-dfb055a81624" class="">Experiencia Laboral</h1><hr id="1ead20d8-797f-811b-b96a-f245f0c3769c"/><div id="1ead20d8-797f-819a-ad02-e7dc512799a7" class="column-list"><div id="1ead20d8-797f-81c7-addc-f2ade1cd50bc" style="width:12.5%" class="column"><p id="1ead20d8-797f-81c1-a0cc-d301c20c95f9" class="">
+</p></div><div id="1ead20d8-797f-81c9-843c-ef57b119902f" style="width:87.5%" class="column"><p id="1ead20d8-797f-81ab-88f8-ea2aee069f5b" class=""><mark class="highlight-purple"><strong>Tecnico / Comercial</strong></mark><strong>, Stonex Show Lighting, </strong><strong><a href="https://www.stonexsl.com/">https://www.stonexsl.com/</a></strong></p><p id="1ead20d8-797f-818b-84e1-cadbe53da86e" class=""><em><mark class="highlight-gray">Abril 2013 - Junio 2024</mark></em></p><p id="1ead20d8-797f-81ef-a0b8-f14b9b1562ad" class="">Responsable de productos ETC Lighting en España. Consolas de Iluminación, Focos y Luminarias, Dimers y Sistemas de Control, Trabajo en Red, y Software de aplicaciones para Iluminación.</p><p id="1ead20d8-797f-8178-959a-cf3f61b10c20" class=""><strong>Logros clave</strong></p><ul id="1ead20d8-797f-8153-a820-dbb1bf7ed0c5" class="bulleted-list"><li style="list-style-type:disc">Liderando la modernización y digitalización de la empresa, implementando soluciones tecnológicas avanzadas.</li></ul><ul id="1ead20d8-797f-8151-ac16-f34c31857126" class="bulleted-list"><li style="list-style-type:disc">Gestión de la expansión y crecimiento de la marca en el mercado nacional.</li></ul><ul id="1ead20d8-797f-81ad-9647-ecff267780a9" class="bulleted-list"><li style="list-style-type:disc">Desarrollo programas de formación para clientes y equipos internos.</li></ul><p id="1ead20d8-797f-815d-b826-d0edf4cd7de8" class="">
+</p><p id="1ead20d8-797f-816e-8182-f750928b1bde" class=""><mark class="highlight-purple"><strong>Lighting Expert</strong></mark>, <strong>Teatros del Canal, </strong><strong><a href="https://www.teatroscanal.com/">https://www.teatroscanal.com/</a></strong></p><p id="1ead20d8-797f-8148-95e6-e463504364f8" class=""><em><mark class="highlight-gray">Noviembre 2012- Abril 2013</mark></em></p><p id="1ead20d8-797f-8151-8fdf-c6a184a149f9" class="">Parte del equipo de iluminación escénica en un de los teatros nacionales con mayor producción anual.</p><p id="1ead20d8-797f-81fd-bd14-d43d411ca43c" class="">
+</p><p id="1ead20d8-797f-8118-8576-d59097724826" class=""><mark class="highlight-purple"><strong>Lighting Expert</strong></mark>, Stage Entertainment<strong>, </strong><a href="https://www.stage.es/">https://www.stage.es/</a></p><p id="1ead20d8-797f-8181-a220-de09b388aa19" class=""><em><mark class="highlight-gray">Septiembre 2012- Noviembre 2012</mark></em></p><p id="1ead20d8-797f-812a-9464-c39813e8756c" class="">World Tour: UK, Germany, France, Costa Rica, México, Venezuela, Brasil, Colombia.</p></div></div><h1 id="1ead20d8-797f-8147-b91c-cbab0edae8cb" class="block-color-default">Proyectos</h1><hr id="1ead20d8-797f-81c7-8c96-ce4826cea548"/><div id="1ead20d8-797f-81a0-b13f-db45620de855" class="collection-content"><h4 class="collection-title">Projects</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(71, 70, 68, 0.6);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Name</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(71, 70, 68, 0.6);flex-shrink:0" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>Descripción</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/kind_gray.svg" style="width:14px;height:14px;display:block"/></span>Etiquetas</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(71, 70, 68, 0.6);flex-shrink:0" class="typesDate"><path d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z"></path></svg></span>Fecha</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(71, 70, 68, 0.6);flex-shrink:0" class="typesUrl"><path d="M7.69922 10.8945L8.73828 9.84863C7.91797 9.77344 7.34375 9.51367 6.91992 9.08984C5.76465 7.93457 5.76465 6.29395 6.91309 5.14551L9.18262 2.87598C10.3379 1.7207 11.9717 1.7207 13.127 2.87598C14.2891 4.04492 14.2822 5.67188 13.1338 6.82031L11.958 7.99609C12.1768 8.49512 12.2451 9.10352 12.1289 9.62988L14.0908 7.6748C15.7725 6 15.7793 3.62109 14.084 1.92578C12.3887 0.223633 10.0098 0.237305 8.33496 1.91211L5.95605 4.29785C4.28125 5.97266 4.26758 8.35156 5.96289 10.0469C6.36621 10.4434 6.90625 10.7441 7.69922 10.8945ZM8.30078 5.13184L7.26855 6.17773C8.08203 6.25293 8.66309 6.51953 9.08008 6.93652C10.2422 8.09863 10.2422 9.73242 9.08691 10.8809L6.81738 13.1504C5.66211 14.3057 4.03516 14.3057 2.87305 13.1504C1.71094 11.9883 1.71777 10.3545 2.87305 9.20605L4.04199 8.03027C3.83008 7.53125 3.75488 6.92969 3.87109 6.39648L1.91602 8.35156C0.234375 10.0264 0.227539 12.4121 1.92285 14.1074C3.61816 15.8027 5.99707 15.7891 7.67188 14.1143L10.0439 11.7354C11.7256 10.0537 11.7324 7.6748 10.0371 5.98633C9.64062 5.58301 9.10059 5.28223 8.30078 5.13184Z"></path></svg></span>URL</th></tr></thead><tbody><tr id="1ead20d8-797f-81c8-ac1e-dfa39722be17"><td class="cell-title"><a href="Web%20personal%201ead20d8797f81c8ac1edfa39722be17.html"><img class="icon" src="https://www.notion.so/icons/cactus_purple.svg"/>Web personal</a></td><td class="cell-p\Ud">Diseñé mi propia web personal basada en Notion y modificada a través de Super. El diseño en Notion es realmente sencillo, y a través de Super puedo mejorar la apariencia y la experiencia de usuario</td><td class="cell-V[wZ"><span class="selected-value select-value-color-green">Diseño Web</span><span class="selected-value select-value-color-purple">Integración Notion/Super</span></td><td class="cell-X[IH"><time>@30/04/2024</time></td><td class="cell-FGiz"><a href="https://juan-carlos-pascual-garcia.super.site/" class="url-value">https://juan-carlos-pascual-garcia.super.site/</a></td></tr><tr id="1ead20d8-797f-818c-9890-ce1107943ace"><td class="cell-title"><a href="Ponencia%20sobre%20Consolas%20de%20iluminacio%CC%81n%20AR%201ead20d8797f818c9890ce1107943ace.html"><img class="icon" src="https://www.notion.so/icons/flash_blue.svg"/>Ponencia sobre Consolas de iluminación / AR</a></td><td class="cell-p\Ud">En esta ponencia de febrero del 2024, formando parte del equipo técnico/comercial de Stonex, hablo sobre las características técnicas de las consolas de iluminación Apex y, en especial, de sus capacidades de Realidad Aumentada</td><td class="cell-V[wZ"><span class="selected-value select-value-color-red">Consolas de iluminación</span><span class="selected-value select-value-color-brown">Digitalización</span><span class="selected-value select-value-color-pink">Iluminación Escénica</span><span class="selected-value select-value-color-yellow">Realidad Aumentada</span></td><td class="cell-X[IH"><time>@06/02/2024</time></td><td class="cell-FGiz"><a href="https://www.youtube.com/watch?v=Un2vh04AX4M&amp;t=2s" class="url-value">https://www.youtube.com/watch?v=Un2vh04AX4M&amp;t=2s</a></td></tr></tbody></table><br/><br/></div><h1 id="1ead20d8-797f-81c8-a268-ede48e5b1b7a" class="block-color-default">Habilidades</h1><hr id="1ead20d8-797f-81e3-a202-e91f0f3ddf15"/><div id="1ead20d8-797f-8142-89ed-cad937c81228" class="collection-content"><h4 class="collection-title">Skills</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(71, 70, 68, 0.6);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Skill</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/kind_gray.svg" style="width:14px;height:14px;display:block"/></span>Tipo</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/stairs_gray.svg" style="width:14px;height:14px;display:block"/></span>Nivel de conocimiento</th></tr></thead><tbody><tr id="1ead20d8-797f-8157-abed-dccac6a06ae6"><td class="cell-title"><a href="Notion%201ead20d8797f8157abeddccac6a06ae6.html"><img class="icon" src="https://www.notion.so/icons/notion_gray.svg"/>Notion</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-blue">Herramienta de diseño</span></td><td class="cell-Ml?D">60 %</td></tr><tr id="1ead20d8-797f-81f2-bcae-e267a03b9858"><td class="cell-title"><a href="Super%201ead20d8797f81f2bcaee267a03b9858.html"><img class="icon" src="https://www.notion.so/icons/token_red.svg"/>Super</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-blue">Herramienta de diseño</span></td><td class="cell-Ml?D">60 %</td></tr><tr id="1ead20d8-797f-81dc-8992-e4d6237516af"><td class="cell-title"><a href="AWS%201ead20d8797f81dc8992e4d6237516af.html"><img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerGEWZxlTG4jra5dMGs4mUz8DWvZmuIEkoQ&amp;s"/>AWS</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-yellow">Servicios Web</span></td><td class="cell-Ml?D">60 %</td></tr><tr id="1ead20d8-797f-81a2-b73a-dbce562961cc"><td class="cell-title"><a href="Python%201ead20d8797f81a2b73adbce562961cc.html"><img class="icon" src="data:image/jpeg;base64,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"/>Python</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-purple">Lenguaje programación</span></td><td class="cell-Ml?D">30 %</td></tr><tr id="1ead20d8-797f-81ad-9776-cb6427b38a54"><td class="cell-title"><a href="Linux%201ead20d8797f81ad9776cb6427b38a54.html"><img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0jtzBs5EFpJKhx_EEaOgQO5cAHW9pVRRs4Q&amp;s"/>Linux</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-green">Sistema operativo</span></td><td class="cell-Ml?D">30 %</td></tr><tr id="1ead20d8-797f-81cc-af13-ec1dbbef5733"><td class="cell-title"><a href="Splunk%201ead20d8797f81ccaf13ec1dbbef5733.html"><img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNWK602cNBbNXGp97XazNl50xwg1f07uLLnA&amp;s"/>Splunk</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-pink">SIEM Tools</span></td><td class="cell-Ml?D">30 %</td></tr><tr id="1ead20d8-797f-8103-bf7d-d4697f800b59"><td class="cell-title"><a href="Java%201ead20d8797f8103bf7dd4697f800b59.html"><img class="icon" src="data:image/png;base64,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"/>Java</a></td><td class="cell-a&gt;JK"><span class="selected-value select-value-color-purple">Lenguaje programación</span></td><td class="cell-Ml?D">20 %</td></tr></tbody></table><br/><br/></div><p id="1ead20d8-797f-8180-9abf-fad0f69ebf4e" class="">
+</p></div></div><p id="1ead20d8-797f-81af-b972-ec3e1dc75caf" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
