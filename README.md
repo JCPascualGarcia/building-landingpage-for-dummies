@@ -40,6 +40,8 @@ Este proyecto es una guía rápida para crear una página web personal sencilla 
 
 Obtendrás una página web profesional, rápida y adaptable, ideal para mostrar tu portfolio, currículum o proyectos.
 
+Aquí te dejo un enlace a la página que construí: https://juan-carlos-pascual-garcia.super.site/
+
 ## 📎 Enlaces útiles
 
 - [Documentación de Super](https://docs.super.so/)
