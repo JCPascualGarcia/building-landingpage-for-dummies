@@ -12,7 +12,7 @@ Este proyecto es una guía rápida para crear una página web personal sencilla 
 
 ### 1. Diseña tu página en Notion
 
-1. Crea una nueva página en Notion. Puedes también utilizar plantillas gratuitas y lanzar tu landingpage muy rápidamente: https://www.notion.com/es-es/templates
+1. Crea una nueva página en Notion. Puedes también utilizar plantillas gratuitas y lanzar tu landingpage muy rápidamente: https://www.notion.com/es-es/templates. Aquí te dejo un ejemplo de plantilla: https://notion.notion.site/Maya-Zhang-b7dd3506c9e24c0da61b2427d4d14977
 2. Agrega secciones como:
    - Sobre mí
    - Proyectos
